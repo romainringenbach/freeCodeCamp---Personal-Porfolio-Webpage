@@ -25,3 +25,21 @@ overflow-wrap: break-word;
 #root, #__next {
 isolation: isolate;
 }
+
+/* Minimal */
+
+#welcome-section {
+    height: 100vh;
+}
+
+#navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+
+@media (max-width: 500px){
+    #navbar {
+        flex-direction: column;
+    }
+}
